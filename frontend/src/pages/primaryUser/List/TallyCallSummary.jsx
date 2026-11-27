@@ -97,7 +97,7 @@ export default function TallyCallSummary() {
           : !ready ? <p className="px-4 py-6 text-sm text-slate-600">Select a {period} to see call counts.</p>
           : !report ? <p role="status" className="px-4 py-6 text-sm text-slate-600">Loading call summary…</p>
           : !report.staff.length ? <p className="px-4 py-6 text-sm text-slate-600">No staff accounts found.</p>
-          : <div className="overflow-x-auto" tabIndex={0} role="region" aria-label="Staff call counts">
+          : <div className="min-h-0 flex-1 overflow-auto" tabIndex={0} role="region" aria-label="Staff call counts">
             <table className="w-full min-w-[740px] text-sm">
               <thead className="bg-slate-100 text-xs text-slate-700"><tr>
                 <th scope="col" className="px-4 py-3 text-left">Staff member</th>
